@@ -2,6 +2,29 @@
 Changelog for package tf2_kdl
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.17 (2018-01-01)
+-------------------
+* Merge pull request `#257 <https://github.com/ros/geometry2/issues/257>`_ from delftrobotics-forks/python3
+  Make tf2_py python3 compatible again
+* Use python3 print function.
+* Contributors: Maarten de Vries, Tully Foote
+
+0.5.16 (2017-07-14)
+-------------------
+* store gtest return value as int (`#229 <https://github.com/ros/geometry2/issues/229>`_)
+* Find eigen in a much nicer way.
+* Switch tf2_kdl over to package.xml format 2.
+* Contributors: Chris Lalancette, dhood
+
+0.5.15 (2017-01-24)
+-------------------
+
+0.5.14 (2017-01-16)
+-------------------
+* Add Python documentation for tf2_kdl
+* Document kdl
+* Contributors: Jackie Kay
+
 0.5.13 (2016-03-04)
 -------------------
 * converting python test script into unit test

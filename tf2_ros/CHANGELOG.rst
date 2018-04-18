@@ -2,6 +2,47 @@
 Changelog for package tf2_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.17 (2018-01-01)
+-------------------
+* Merge pull request `#260 <https://github.com/ros/geometry2/issues/260>`_ from randoms/indigo-devel
+  fix python3 import error
+* Merge pull request `#257 <https://github.com/ros/geometry2/issues/257>`_ from delftrobotics-forks/python3
+  Make tf2_py python3 compatible again
+* Use python3 print function.
+* Contributors: Maarten de Vries, Tully Foote, randoms
+
+0.5.16 (2017-07-14)
+-------------------
+* Merge pull request `#144 <https://github.com/ros/geometry2/issues/144>`_ from clearpathrobotics/dead_lock_fix
+  Solve a bug that causes a deadlock in MessageFilter
+* Clear error string if it exists from the external entry points.
+  Fixes `#117 <https://github.com/ros/geometry2/issues/117>`_
+* Make buff_size and tcp_nodelay and subscriber queue size mutable.
+* Remove generate_rand_vectors() from a number of tests. (`#227 <https://github.com/ros/geometry2/issues/227>`_)
+  * Remove generate_rand_vectors() from a number of tests.
+* Log jump duration on backwards time jump detection. (`#234 <https://github.com/ros/geometry2/issues/234>`_)
+* replaced dependencies on tf2_msgs_gencpp by exported dependencies
+* Use new-style objects in python 2
+* Solve a bug that causes a deadlock in MessageFilter
+* Contributors: Adel Fakih, Chris Lalancette, Christopher Wecht, Eric Wieser, Koji Terada, Stephan, Tully Foote, koji_terada
+
+0.5.15 (2017-01-24)
+-------------------
+* tf2_ros: add option to unregister TransformListener (`#201 <https://github.com/ros/geometry2/issues/201>`_)
+* Contributors: Hans-Joachim Krauch
+
+0.5.14 (2017-01-16)
+-------------------
+* Drop roslib.load_manifest (`#191 <https://github.com/ros/geometry2/issues/191>`_)
+* Adds ability to load TF from the ROS parameter server.
+* Code linting & reorganization
+* Fix indexing beyond end of array
+* added a static transform broadcaster in python
+* lots more documentation
+* remove BufferCore doc, add BufferClient/BufferServer doc for C++, add Buffer/BufferInterface Python documentation
+* Better overview for Python
+* Contributors: Eric Wieser, Felix Duvallet, Jackie Kay, Mikael Arguedas, Mike Purvis
+
 0.5.13 (2016-03-04)
 -------------------
 * fix documentation warnings

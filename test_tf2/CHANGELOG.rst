@@ -2,6 +2,43 @@
 Changelog for package test_tf2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.17 (2018-01-01)
+-------------------
+* Merge pull request `#257 <https://github.com/ros/geometry2/issues/257>`_ from delftrobotics-forks/python3
+  Make tf2_py python3 compatible again
+* Use python3 print function.
+* Contributors: Maarten de Vries, Tully Foote
+
+0.5.16 (2017-07-14)
+-------------------
+* Remove generate_rand_vectors() from a number of tests. (`#227 <https://github.com/ros/geometry2/issues/227>`_)
+  * Remove a slew of trailing whitespace.
+  Signed-off-by: Chris Lalancette <clalancette@osrfoundation.org>
+  * Remove generate_rand_vectors() from a number of tests.
+  It was never used, so there is no reason to carry it around.
+  Signed-off-by: Chris Lalancette <clalancette@osrfoundation.org>
+* store gtest return value as int (`#229 <https://github.com/ros/geometry2/issues/229>`_)
+* Contributors: Chris Lalancette, dhood
+
+0.5.15 (2017-01-24)
+-------------------
+
+0.5.14 (2017-01-16)
+-------------------
+* Typos.
+* Adds unit tests for TF loaded from parameter server.
+  This tests both success (loading a valid TF into the param server) and
+  failures (parameter does not exist, parameter contents are invalid).
+* Code linting & reorganization
+  - whitespace
+  - indentation
+  - re-organized code to remove duplications.
+  whitespace & indentation changes only.
+  simplified (de-duplicated) duplicate code.
+  missing a duplicate variable.
+  whitespace changes only.
+* Contributors: Felix Duvallet
+
 0.5.13 (2016-03-04)
 -------------------
 * Remove LGPL from license tags

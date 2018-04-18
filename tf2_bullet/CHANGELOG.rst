@@ -2,6 +2,22 @@
 Changelog for package tf2_bullet
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.17 (2018-01-01)
+-------------------
+
+0.5.16 (2017-07-14)
+-------------------
+* store gtest return value as int (`#229 <https://github.com/ros/geometry2/issues/229>`_)
+* Contributors: dhood
+
+0.5.15 (2017-01-24)
+-------------------
+
+0.5.14 (2017-01-16)
+-------------------
+* Improve documentation
+* Contributors: Jackie Kay
+
 0.5.13 (2016-03-04)
 -------------------
 * Don't export catkin includes

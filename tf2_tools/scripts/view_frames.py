@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # Copyright (c) 2008, Willow Garage, Inc.
 # All rights reserved.
 # 
@@ -28,7 +28,6 @@
 
 # author: Wim Meeussen
 
-import roslib; roslib.load_manifest('tf2_tools')
 import rospy
 import tf2_py as tf2
 import yaml

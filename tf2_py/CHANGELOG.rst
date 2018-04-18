@@ -2,6 +2,41 @@
 Changelog for package tf2_py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.17 (2018-01-01)
+-------------------
+* Merge pull request `#266 <https://github.com/ros/geometry2/issues/266>`_ from randoms/indigo-devel
+  fix METH_OLDARGS is no longer supported error in python3
+* Merge pull request `#260 <https://github.com/ros/geometry2/issues/260>`_ from randoms/indigo-devel
+  fix python3 import error
+* Merge pull request `#257 <https://github.com/ros/geometry2/issues/257>`_ from delftrobotics-forks/python3
+  Make tf2_py python3 compatible again
+* Use string conversion from python_compat.h.
+* Contributors: Maarten de Vries, Tully Foote, randoms
+
+0.5.16 (2017-07-14)
+-------------------
+* fix memory leak calling Py_DECREF for all created PyObject
+* replaced dependencies on tf2_msgs_gencpp by exported dependencies
+* Relax strict type checks at setTransform to only check for members (`#221 <https://github.com/ros/geometry2/issues/221>`_)
+* expose deprecated methods in tf2_py API to support better backwards compatibility. Fixes `#206 <https://github.com/ros/geometry2/issues/206>`_
+* Contributors: Christopher Wecht, Sergio Ramos, Tully Foote, alex
+
+0.5.15 (2017-01-24)
+-------------------
+
+0.5.14 (2017-01-16)
+-------------------
+* Improve tf compatibility (`#192 <https://github.com/ros/geometry2/issues/192>`_)
+  getLatestCommonTime() is needed to implement the TF API.
+  See `ros/geometry#134 <https://github.com/ros/geometry/issues/134>`_
+* Add missing type checks at Python/C++ tf2 transform interface `#159 <https://github.com/ros/geometry2/issues/159>`_ (`#197 <https://github.com/ros/geometry2/issues/197>`_)
+* Make tf2_py compatible with python3. (`#173 <https://github.com/ros/geometry2/issues/173>`_)
+  * tf2_py: Use PyUnicode objects for text in python3.
+  * tf2_py: Make module initialization python3 compatible.
+  * tf2_py: Fix type definition for python3.
+  * tf2_py: Move and rename PyObject_BorrowAttrString.
+* Contributors: Maarten de Vries, Timo Röhling, alex
+
 0.5.13 (2016-03-04)
 -------------------
 
@@ -80,4 +115,3 @@ Changelog for package tf2_py
 0.4.0 (2013-06-27)
 ------------------
 * splitting rospy dependency into tf2_py so tf2 is pure c++ library.
-
