@@ -35,16 +35,6 @@
 
 using namespace tf2;
 
-void spin_for_a_second()
-{
-  ros::spinOnce();
-  for (uint8_t i = 0; i < 10; ++i)
-  {
-    usleep(100);
-    ros::spinOnce();
-  }
-}
-
 TEST(tf2_ros_transform_listener, time_backwards)
 {
 
@@ -75,7 +65,8 @@ TEST(tf2_ros_transform_listener, time_backwards)
 
 
   // make sure it arrives
-  spin_for_a_second();
+  ros::spinOnce();
+  sleep(1);
 
   // verify it's been set
   ASSERT_TRUE(buffer.canTransform("foo", "bar", ros::Time(101, 0)));
@@ -84,7 +75,9 @@ TEST(tf2_ros_transform_listener, time_backwards)
   clock.publish(c);
 
   // make sure it arrives
-  spin_for_a_second();
+  ros::spinOnce();
+  sleep(1);
+  ros::spinOnce();
 
   //Send another message to trigger clock test on an unrelated frame
   msg.header.stamp = ros::Time(110, 0);
@@ -93,7 +86,9 @@ TEST(tf2_ros_transform_listener, time_backwards)
   tfb.sendTransform(msg);
 
   // make sure it arrives
-  spin_for_a_second();
+  ros::spinOnce();
+  sleep(1);
+  ros::spinOnce();
 
   //verify the data's been cleared
   ASSERT_FALSE(buffer.canTransform("foo", "bar", ros::Time(101, 0)));
