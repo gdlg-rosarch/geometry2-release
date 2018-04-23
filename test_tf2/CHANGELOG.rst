@@ -2,6 +2,12 @@
 Changelog for package test_tf2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.1 (2018-03-21)
+------------------
+
+0.6.0 (2018-03-21)
+------------------
+
 0.5.17 (2018-01-01)
 -------------------
 * Merge pull request `#257 <https://github.com/ros/geometry2/issues/257>`_ from delftrobotics-forks/python3
