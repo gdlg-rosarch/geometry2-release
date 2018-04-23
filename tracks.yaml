@@ -18,7 +18,7 @@ tracks:
     ros_distro: kinetic
     vcs_type: git
     vcs_uri: https://github.com/ros/geometry_experimental.git
-    version: 0.5.17
+    version: 0.6.1
   archlunar:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
@@ -38,7 +38,7 @@ tracks:
     ros_distro: lunar
     vcs_type: git
     vcs_uri: https://github.com/ros/geometry_experimental.git
-    version: 0.5.17
+    version: 0.6.1
   archmelodic:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
